@@ -14,14 +14,13 @@ Install the Python dependencies from this directory:
 python -m pip install -r requirements.txt
 ```
 
-Create a local `.env` file in this skill directory with the API keys you use:
+Copy `.env.example` to `.env` in this skill directory, then replace the placeholders with your API keys:
 
-```env
-SILICONFLOW_API_KEY=your-siliconflow-key
-ZHIPU_API_KEY=your-zhipu-key
+```powershell
+Copy-Item .env.example .env
 ```
 
-The scripts load these supported keys automatically. Values already set in the current process take precedence. Keep `.env` private; it is ignored by Git.
+The scripts load these supported keys automatically. Values already set in the current process take precedence. Keep `.env` private; it is ignored by Git, while `.env.example` contains placeholders only.
 
 ## Index a repository
 
