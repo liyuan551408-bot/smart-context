@@ -1,0 +1,4647 @@
+{
+  "seed": 20260930,
+  "sampling": "uniform random sample without replacement from eligible untouched test records",
+  "source_dataset": "C:\\Users\\liyua\\.codex\\skills\\smart-context\\benchmarks\\generated_multi_repo\\benchmark_test.jsonl",
+  "previous_63_query_pilot_commits_excluded": true,
+  "repositories": [
+    "Express",
+    "Flask"
+  ],
+  "examples_per_repository": {
+    "Express": 50,
+    "Flask": 50
+  },
+  "validation_examples_used": 0,
+  "examples": [
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "test/app.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "1114ca1ab651707abaf5d7505d9d5144cc1bbd89",
+      "deleted_files": [],
+      "duplicate_group": "1114ca1ab651707abaf5d7505d9d5144cc1bbd89",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "test/app.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 3,
+      "message_word_count": 5,
+      "modified_files": [
+        "test/app.js"
+      ],
+      "parent": "9d16bae6821616033389c6cb20652453d155b586",
+      "query": "tests: fix assert usage mistake",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "test/app.js"
+      ],
+      "timestamp": "2015-03-17T01:19:38-04:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/response.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "91731b4b9ce23fe4bb702f341d0a46d78c8ccdbf",
+      "deleted_files": [],
+      "duplicate_group": "91731b4b9ce23fe4bb702f341d0a46d78c8ccdbf",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/response.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 7,
+      "message_word_count": 8,
+      "modified_files": [
+        "lib/response.js"
+      ],
+      "parent": "9073bb4fbc7e5b4b53d00696a3cda0678502379a",
+      "query": "perf: use saved reference to http.STATUS_CODES",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "lib/response.js"
+      ],
+      "timestamp": "2015-06-18T22:56:30-04:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/application.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "10502480d0f286442654852dba4ec57f8d3391fd",
+      "deleted_files": [],
+      "duplicate_group": "10502480d0f286442654852dba4ec57f8d3391fd",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/application.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 5,
+      "message_word_count": 6,
+      "modified_files": [
+        "lib/application.js"
+      ],
+      "parent": "a8a8564459688bdc0b2653da2f28a4fefde7dfdb",
+      "query": "perf: remove argument reassignments in application",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "lib/application.js"
+      ],
+      "timestamp": "2015-06-20T13:31:03-04:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/response.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "bb53b20d4c72548b03af97742bbef4ca15a4801c",
+      "deleted_files": [],
+      "duplicate_group": "bb53b20d4c72548b03af97742bbef4ca15a4801c",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/response.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 6,
+      "message_word_count": 7,
+      "modified_files": [
+        "lib/response.js"
+      ],
+      "parent": "d414a2dc733167114e9a37107cc27f078181d1c2",
+      "query": "perf: remove argument reassignments in response prototype",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "lib/response.js"
+      ],
+      "timestamp": "2015-06-20T14:36:48-04:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/application.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "2a455890b9f68642457698163224f49e31ffff2a",
+      "deleted_files": [],
+      "duplicate_group": "2a455890b9f68642457698163224f49e31ffff2a",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/application.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 4,
+      "message_word_count": 5,
+      "modified_files": [
+        "lib/application.js"
+      ],
+      "parent": "9302acc5e449768b3ca2b03701d5379d86453af5",
+      "query": "Add settings to debug output",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "lib/application.js"
+      ],
+      "timestamp": "2015-06-20T16:21:12-04:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/router/index.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "a7d15f382e8e0fa4380d459fbe61bd363d059a11",
+      "deleted_files": [],
+      "duplicate_group": "a7d15f382e8e0fa4380d459fbe61bd363d059a11",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/router/index.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 6,
+      "message_word_count": 7,
+      "modified_files": [
+        "lib/router/index.js"
+      ],
+      "parent": "6c751191dd15a3e3154b20fd4c9ffd17cebf250b",
+      "query": "Remove un-used depd import in router",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "lib/router/index.js"
+      ],
+      "timestamp": "2015-07-06T21:13:49-04:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/view.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "6343288bef29ab2b0a6f2c6d9888f30e49203a9d",
+      "deleted_files": [],
+      "duplicate_group": "6343288bef29ab2b0a6f2c6d9888f30e49203a9d",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/view.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 11,
+      "message_word_count": 12,
+      "modified_files": [
+        "lib/view.js"
+      ],
+      "parent": "694869d2aa7b5ff5886faf1642011858fc779c36",
+      "query": "Make res.render callback is always async, even for sync view engines",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "lib/view.js"
+      ],
+      "timestamp": "2015-07-07T01:02:13-04:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/router/index.js",
+        "test/app.router.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "ee90042d0c4a32a426842e4c1ad5b24b5c0344ac",
+      "deleted_files": [],
+      "duplicate_group": "ee90042d0c4a32a426842e4c1ad5b24b5c0344ac",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/router/index.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "test/app.router.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 6,
+      "message_word_count": 7,
+      "modified_files": [
+        "lib/router/index.js",
+        "test/app.router.js"
+      ],
+      "parent": "97b2d70d8adfb4649fd8ca9adc73c47ffcc4bf5b",
+      "query": "Fix infinite loop condition using mergeParams: true",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "lib/router/index.js",
+        "test/app.router.js"
+      ],
+      "timestamp": "2015-08-03T00:50:48-04:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/router/index.js",
+        "test/app.router.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "11a77a3fffb0476a460c4e68536ce20f5b3c542f",
+      "deleted_files": [],
+      "duplicate_group": "11a77a3fffb0476a460c4e68536ce20f5b3c542f",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/router/index.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "test/app.router.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 8,
+      "message_word_count": 9,
+      "modified_files": [
+        "lib/router/index.js",
+        "test/app.router.js"
+      ],
+      "parent": "ee90042d0c4a32a426842e4c1ad5b24b5c0344ac",
+      "query": "Fix inner numeric indices incorrectly altering parent req.params",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "lib/router/index.js",
+        "test/app.router.js"
+      ],
+      "timestamp": "2015-08-03T01:01:16-04:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "test/res.sendFile.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "fc40702cb70e39565263d64d962d3b8164fb3621",
+      "deleted_files": [],
+      "duplicate_group": "fc40702cb70e39565263d64d962d3b8164fb3621",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "test/res.sendFile.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 3,
+      "message_word_count": 5,
+      "modified_files": [
+        "test/res.sendFile.js"
+      ],
+      "parent": "c762b16f62e2c9f5de33481c250ef6f94a99eb7f",
+      "query": "deps: send@0.14.1",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "test/res.sendFile.js"
+      ],
+      "timestamp": "2016-06-12T22:33:44-04:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "test/req.ip.js",
+        "test/res.sendFile.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "fb3946f4549395b2f0d3a166ef74eb407d11549b",
+      "deleted_files": [],
+      "duplicate_group": "fb3946f4549395b2f0d3a166ef74eb407d11549b",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "test/req.ip.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "test/res.sendFile.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 3,
+      "message_word_count": 6,
+      "modified_files": [
+        "test/req.ip.js",
+        "test/res.sendFile.js"
+      ],
+      "parent": "4f291e7d55d6093ecc4a99d88c785dee22d6d125",
+      "query": "lint: fix broken indentation in tests",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "test/req.ip.js",
+        "test/res.sendFile.js"
+      ],
+      "timestamp": "2017-02-04T20:54:47-05:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/router/layer.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "7bc5f1af968175ddb492cc436a37fc53a8026175",
+      "deleted_files": [],
+      "duplicate_group": "7bc5f1af968175ddb492cc436a37fc53a8026175",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/router/layer.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 6,
+      "message_word_count": 6,
+      "modified_files": [
+        "lib/router/layer.js"
+      ],
+      "parent": "8de1230d039f4391a8c7227e8ce702f280b72e33",
+      "query": "lint: consolidate layer match failure path",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "lib/router/layer.js"
+      ],
+      "timestamp": "2017-02-22T23:09:36-05:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/router/index.js",
+        "test/Router.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "51f52901eb1f00571e18d404e10b27310215234c",
+      "deleted_files": [],
+      "duplicate_group": "51f52901eb1f00571e18d404e10b27310215234c",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/router/index.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "test/Router.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 9,
+      "message_word_count": 10,
+      "modified_files": [
+        "lib/router/index.js",
+        "test/Router.js"
+      ],
+      "parent": "8b6dc6ceec1b36e74ee9c6d362aa04e46237c227",
+      "query": "Fix case where router.use skipped requests routes did not",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "lib/router/index.js",
+        "test/Router.js"
+      ],
+      "timestamp": "2017-02-26T13:59:47-05:00"
+    },
+    {
+      "added_files": [
+        "examples/search/public/index.html"
+      ],
+      "all_changed_files": [
+        "examples/search/client.js",
+        "examples/search/index.js",
+        "examples/search/public/client.js",
+        "examples/search/public/index.html"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 4,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "4012846d2534addd8de0b0c237cd63ada104109a",
+      "deleted_files": [],
+      "duplicate_group": "4012846d2534addd8de0b0c237cd63ada104109a",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "examples/search/index.js",
+          "status": "M"
+        },
+        {
+          "old_path": "examples/search/client.js",
+          "path": "examples/search/public/client.js",
+          "status": "R100"
+        },
+        {
+          "old_path": "",
+          "path": "examples/search/public/index.html",
+          "status": "A"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 6,
+      "message_word_count": 7,
+      "modified_files": [
+        "examples/search/index.js"
+      ],
+      "parent": "6d9b1279899cbc1fbaa2b98a2ab118a2c3081778",
+      "query": "examples: use static assets in search example",
+      "renamed_files": [
+        "examples/search/client.js"
+      ],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "examples/search/client.js",
+        "examples/search/index.js"
+      ],
+      "timestamp": "2017-03-01T18:22:36-05:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/application.js",
+        "lib/middleware/init.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "c087a45b9cc3eb69c777e260ee880758b6e03a40",
+      "deleted_files": [],
+      "duplicate_group": "c087a45b9cc3eb69c777e260ee880758b6e03a40",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/application.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "lib/middleware/init.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 4,
+      "message_word_count": 6,
+      "modified_files": [
+        "lib/application.js",
+        "lib/middleware/init.js"
+      ],
+      "parent": "347d4db3cac2979d639cb2be161ba01c9b2336d2",
+      "query": "Fix typo in variable name setPrototypeOf",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "lib/application.js",
+        "lib/middleware/init.js"
+      ],
+      "timestamp": "2017-03-31T22:27:00-04:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "examples/cookie-sessions/index.js",
+        "test/acceptance/cookie-sessions.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "5e16f400f17ca4bac48226446b09299e392db3b2",
+      "deleted_files": [],
+      "duplicate_group": "5e16f400f17ca4bac48226446b09299e392db3b2",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "examples/cookie-sessions/index.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "test/acceptance/cookie-sessions.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 7,
+      "message_word_count": 9,
+      "modified_files": [
+        "examples/cookie-sessions/index.js",
+        "test/acceptance/cookie-sessions.js"
+      ],
+      "parent": "43dff4ceb3446397aa3fe8c48b2de67b9e76a031",
+      "query": "examples: use 1-based visitor count in cookie-sessions",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "examples/cookie-sessions/index.js",
+        "test/acceptance/cookie-sessions.js"
+      ],
+      "timestamp": "2017-07-26T13:05:41-04:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/utils.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "d9d09b8b9041504b645f3173ca70ef173c7e1563",
+      "deleted_files": [],
+      "duplicate_group": "d9d09b8b9041504b645f3173ca70ef173c7e1563",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/utils.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 8,
+      "message_word_count": 8,
+      "modified_files": [
+        "lib/utils.js"
+      ],
+      "parent": "02a9d5fb28e313fd94ee5ec24fe5da02fbc0d6eb",
+      "query": "perf: re-use options object when generating ETags",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "lib/utils.js"
+      ],
+      "timestamp": "2017-09-28T08:04:42-04:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "test/Router.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "972ada9079b715f9e806ef04ec73311fb46bded0",
+      "deleted_files": [],
+      "duplicate_group": "972ada9079b715f9e806ef04ec73311fb46bded0",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "test/Router.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 4,
+      "message_word_count": 7,
+      "modified_files": [
+        "test/Router.js"
+      ],
+      "parent": "80e64691e1972dccc79def005190da33c641d51e",
+      "query": "tests: remove duplicate block in router test",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "test/Router.js"
+      ],
+      "timestamp": "2018-02-13T17:14:48-05:00"
+    },
+    {
+      "added_files": [
+        "test/express.json.js"
+      ],
+      "all_changed_files": [
+        "test/exports.js",
+        "test/express.json.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "955f2a5f78c75cd58f8c4517725a14dd3ee199a4",
+      "deleted_files": [],
+      "duplicate_group": "955f2a5f78c75cd58f8c4517725a14dd3ee199a4",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "test/exports.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "test/express.json.js",
+          "status": "A"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 4,
+      "message_word_count": 6,
+      "modified_files": [
+        "test/exports.js"
+      ],
+      "parent": "2f782d8478948124a1c96fe04de259385163100f",
+      "query": "tests: add express.json test suite",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "test/exports.js"
+      ],
+      "timestamp": "2019-05-01T22:59:42-04:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "examples/ejs/views/header.html",
+        "examples/search/public/index.html"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "3f1dcb96e0ad0145b47a4b1e37bfbbfa6abaf602",
+      "deleted_files": [],
+      "duplicate_group": "3f1dcb96e0ad0145b47a4b1e37bfbbfa6abaf602",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "examples/ejs/views/header.html",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "examples/search/public/index.html",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 6,
+      "message_word_count": 7,
+      "modified_files": [
+        "examples/ejs/views/header.html",
+        "examples/search/public/index.html"
+      ],
+      "parent": "4b4fa26298c3ee9eb7385cc04a1f33f670fd82bb",
+      "query": "examples: add viewport and charset where missing",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "examples/ejs/views/header.html",
+        "examples/search/public/index.html"
+      ],
+      "timestamp": "2020-03-25T17:10:34-04:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "examples/ejs/public/stylesheets/style.css"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "30afebf8dae8a810c92d3d26d4fceced39324fc4",
+      "deleted_files": [],
+      "duplicate_group": "30afebf8dae8a810c92d3d26d4fceced39324fc4",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "examples/ejs/public/stylesheets/style.css",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 5,
+      "message_word_count": 7,
+      "modified_files": [
+        "examples/ejs/public/stylesheets/style.css"
+      ],
+      "parent": "8e4add7f749796b850af6ddd4cebfdc6185e2fd5",
+      "query": "examples: fixed typo in ejs example css",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "examples/ejs/public/stylesheets/style.css"
+      ],
+      "timestamp": "2021-07-30T16:22:34-04:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "test/app.request.js",
+        "test/app.response.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "00ad5bee96bade1b776be62c7f1912eefc41793d",
+      "deleted_files": [],
+      "duplicate_group": "00ad5bee96bade1b776be62c7f1912eefc41793d",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "test/app.request.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "test/app.response.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 6,
+      "message_word_count": 9,
+      "modified_files": [
+        "test/app.request.js",
+        "test/app.response.js"
+      ],
+      "parent": "141914e8172f5d1a08825fc60a54d944121b1ec0",
+      "query": "tests: add more tests for app.request & app.response",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "test/app.request.js",
+        "test/app.response.js"
+      ],
+      "timestamp": "2022-02-02T15:02:46-05:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "test/req.ip.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "744564fcf806311fdc88fb1d8b4097560d514ad7",
+      "deleted_files": [],
+      "duplicate_group": "744564fcf806311fdc88fb1d8b4097560d514ad7",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "test/req.ip.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 5,
+      "message_word_count": 9,
+      "modified_files": [
+        "test/req.ip.js"
+      ],
+      "parent": "da6cb0ed8a4c9a5048cf391a32f9fab1960d9284",
+      "query": "tests: add test for multiple ips in \"trust proxy\"",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "test/req.ip.js"
+      ],
+      "timestamp": "2022-02-02T16:19:01-05:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "examples/web-service/index.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "884657d54665f323c236055d6e3d3e85d96e5f08",
+      "deleted_files": [],
+      "duplicate_group": "884657d54665f323c236055d6e3d3e85d96e5f08",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "examples/web-service/index.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 6,
+      "message_word_count": 7,
+      "modified_files": [
+        "examples/web-service/index.js"
+      ],
+      "parent": "7511d083283529f865ade6fedac08716f0efde05",
+      "query": "examples: remove bitwise syntax for includes check",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "examples/web-service/index.js"
+      ],
+      "timestamp": "2022-02-07T22:58:44-05:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "test/res.append.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "9967ffbdc2b90fd651e2a687fabc0d53a1065f82",
+      "deleted_files": [],
+      "duplicate_group": "9967ffbdc2b90fd651e2a687fabc0d53a1065f82",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "test/res.append.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 6,
+      "message_word_count": 9,
+      "modified_files": [
+        "test/res.append.js"
+      ],
+      "parent": "7df0c840e07d17a2268a2ab18e6db7656b203b78",
+      "query": "tests: update res.append to verify separate header lines",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "test/res.append.js"
+      ],
+      "timestamp": "2022-02-21T19:23:25-05:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/router/index.js",
+        "lib/router/route.js",
+        "test/Route.js",
+        "test/Router.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 4,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "708ac4cdf5cd0a658d62490a9f4d78d3e1ec6612",
+      "deleted_files": [],
+      "duplicate_group": "708ac4cdf5cd0a658d62490a9f4d78d3e1ec6612",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/router/index.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "lib/router/route.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "test/Route.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "test/Router.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 6,
+      "message_word_count": 8,
+      "modified_files": [
+        "lib/router/index.js",
+        "lib/router/route.js",
+        "test/Route.js",
+        "test/Router.js"
+      ],
+      "parent": "92c5ce59f51cce4b3598fd040117772fac42dce8",
+      "query": "Fix handling very large stacks of sync middleware",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 4,
+      "targets": [
+        "lib/router/index.js",
+        "lib/router/route.js",
+        "test/Route.js",
+        "test/Router.js"
+      ],
+      "timestamp": "2022-04-13T23:29:25-04:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "test/Router.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "fd8e45c344325a4a91c1b916f3617a3574018976",
+      "deleted_files": [],
+      "duplicate_group": "fd8e45c344325a4a91c1b916f3617a3574018976",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "test/Router.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 5,
+      "message_word_count": 7,
+      "modified_files": [
+        "test/Router.js"
+      ],
+      "parent": "708ac4cdf5cd0a658d62490a9f4d78d3e1ec6612",
+      "query": "tests: mark stack overflow as long running",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "test/Router.js"
+      ],
+      "timestamp": "2022-04-20T19:52:20-04:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "benchmarks/middleware.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "75e0c7a2c91665f44d053d83be15f8ecd0177f41",
+      "deleted_files": [],
+      "duplicate_group": "75e0c7a2c91665f44d053d83be15f8ecd0177f41",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "benchmarks/middleware.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 4,
+      "message_word_count": 4,
+      "modified_files": [
+        "benchmarks/middleware.js"
+      ],
+      "parent": "e2482b7e36e39fd9875508a297c2db4a80a33635",
+      "query": "bench: remove unused parameter",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "benchmarks/middleware.js"
+      ],
+      "timestamp": "2022-04-28T22:00:49-04:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "test/res.sendFile.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "bb7907b932afe3a19236a642f6054b6c8f7349a0",
+      "deleted_files": [],
+      "duplicate_group": "bb7907b932afe3a19236a642f6054b6c8f7349a0",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "test/res.sendFile.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 5,
+      "message_word_count": 5,
+      "modified_files": [
+        "test/res.sendFile.js"
+      ],
+      "parent": "f56ce73186e885a938bfdb3d3d1005a58e6ae12b",
+      "query": "build: Node.js@18.10",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "test/res.sendFile.js"
+      ],
+      "timestamp": "2022-10-07T17:48:59-04:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "examples/error/index.js",
+        "examples/view-locals/index.js",
+        "examples/web-service/index.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 3,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "3c1d605da76a6c25dbe423a42d58871803c3e328",
+      "deleted_files": [],
+      "duplicate_group": "3c1d605da76a6c25dbe423a42d58871803c3e328",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "examples/error/index.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "examples/view-locals/index.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "examples/web-service/index.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 5,
+      "message_word_count": 6,
+      "modified_files": [
+        "examples/error/index.js",
+        "examples/view-locals/index.js",
+        "examples/web-service/index.js"
+      ],
+      "parent": "6b4c4f5426fb5de23fb7174fd6e3bf53048e06ca",
+      "query": "lint: remove unused parameters in examples",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 3,
+      "targets": [
+        "examples/error/index.js",
+        "examples/view-locals/index.js",
+        "examples/web-service/index.js"
+      ],
+      "timestamp": "2023-02-22T10:25:07-05:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/router/route.js",
+        "test/Router.js"
+      ],
+      "author": "Douglas Christopher Wilson",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "74beeac0718c928b4ba249aba3652c52fbe32ca8",
+      "deleted_files": [],
+      "duplicate_group": "74beeac0718c928b4ba249aba3652c52fbe32ca8",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/router/route.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "test/Router.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 4,
+      "message_word_count": 5,
+      "modified_files": [
+        "lib/router/route.js",
+        "test/Router.js"
+      ],
+      "parent": "9bc1742937253825d2dc1e9a48c8e8424f0a315b",
+      "query": "Fix routing requests without method",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "lib/router/route.js",
+        "test/Router.js"
+      ],
+      "timestamp": "2023-02-23T17:23:22-05:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/response.js",
+        "test/res.location.js"
+      ],
+      "author": "Wes Todd",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "0867302ddbde0e9463d0564fea5861feb708c2dd",
+      "deleted_files": [],
+      "duplicate_group": "0867302ddbde0e9463d0564fea5861feb708c2dd",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/response.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "test/res.location.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 8,
+      "message_word_count": 9,
+      "modified_files": [
+        "lib/response.js",
+        "test/res.location.js"
+      ],
+      "parent": "567c9c665d0de4c344b8e160146050770233783c",
+      "query": "Prevent open redirect allow list bypass due to encodeurl",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "lib/response.js",
+        "test/res.location.js"
+      ],
+      "timestamp": "2024-03-20T10:18:54-05:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/application.js"
+      ],
+      "author": "Wes Todd",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "26801a0afdd73258ee3c3685e30d5d4040c1558d",
+      "deleted_files": [],
+      "duplicate_group": "26801a0afdd73258ee3c3685e30d5d4040c1558d",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/application.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 8,
+      "message_word_count": 9,
+      "modified_files": [
+        "lib/application.js"
+      ],
+      "parent": "14439731f968c1ec6015227d747ede32d3fbf676",
+      "query": "Use object with null prototype for settings closes #4835",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "lib/application.js"
+      ],
+      "timestamp": "2024-04-29T10:12:23-05:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "test/app.router.js",
+        "test/res.send.js",
+        "test/support/utils.js"
+      ],
+      "author": "GitHub",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 3,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "b44191eb3de5fcc94b384d7d6028b8c9a0144231",
+      "deleted_files": [],
+      "duplicate_group": "b44191eb3de5fcc94b384d7d6028b8c9a0144231",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "test/app.router.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "test/res.send.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "test/support/utils.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 8,
+      "message_word_count": 10,
+      "modified_files": [
+        "test/app.router.js",
+        "test/res.send.js",
+        "test/support/utils.js"
+      ],
+      "parent": "8417c60fcfd7a9523e8783fd3f489d771df1ce44",
+      "query": "ignore ETAG query test as well, reuse skip util (#5639)",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 3,
+      "targets": [
+        "test/app.router.js",
+        "test/res.send.js",
+        "test/support/utils.js"
+      ],
+      "timestamp": "2024-05-04T18:01:42-04:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "test/app.router.js"
+      ],
+      "author": "GitHub",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "082d6d1253c590cb3c8920327c76e70328a1bd80",
+      "deleted_files": [],
+      "duplicate_group": "082d6d1253c590cb3c8920327c76e70328a1bd80",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "test/app.router.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 4,
+      "message_word_count": 6,
+      "modified_files": [
+        "test/app.router.js"
+      ],
+      "parent": "94546a3cc549a93edadea3b698097509c7ef3c64",
+      "query": "test: add discarded middleware test (#5819)",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "test/app.router.js"
+      ],
+      "timestamp": "2024-10-20T20:06:49+02:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/application.js"
+      ],
+      "author": "GitHub",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "8cb53ea5c3329032a1db47be019b717d8350fb0e",
+      "deleted_files": [],
+      "duplicate_group": "8cb53ea5c3329032a1db47be019b717d8350fb0e",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/application.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 5,
+      "message_word_count": 6,
+      "modified_files": [
+        "lib/application.js"
+      ],
+      "parent": "e162764f0f9c49eb6dc7d3d46cd99ac0e28e1948",
+      "query": "refactor: Remove Object.setPrototypeOf polyfill (#6081)",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "lib/application.js"
+      ],
+      "timestamp": "2024-10-22T20:22:26+02:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "examples/params/index.js"
+      ],
+      "author": "GitHub",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "e4a61bd88e2f170eab64d937f3bf6c0812b4a649",
+      "deleted_files": [],
+      "duplicate_group": "e4a61bd88e2f170eab64d937f3bf6c0812b4a649",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "examples/params/index.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 3,
+      "message_word_count": 4,
+      "modified_files": [
+        "examples/params/index.js"
+      ],
+      "parent": "39f5d633b55726469cf3bb72eb905cb6b1f59d18",
+      "query": "refactor: improve readability (#6173)",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "examples/params/index.js"
+      ],
+      "timestamp": "2024-11-27T21:22:22+01:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/application.js",
+        "lib/response.js",
+        "test/res.cookie.js"
+      ],
+      "author": "GitHub",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 3,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "246f6f5aeebad1b9d6a0ea08cd96d3fe19f8f23c",
+      "deleted_files": [],
+      "duplicate_group": "246f6f5aeebad1b9d6a0ea08cd96d3fe19f8f23c",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/application.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "lib/response.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "test/res.cookie.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 9,
+      "message_word_count": 10,
+      "modified_files": [
+        "lib/application.js",
+        "lib/response.js",
+        "test/res.cookie.js"
+      ],
+      "parent": "b11122be85377375465b2aa103da43301e56f128",
+      "query": "fix: Remove `utils-merge` dependency - use spread syntax instead (#6091)",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 3,
+      "targets": [
+        "lib/application.js",
+        "lib/response.js",
+        "test/res.cookie.js"
+      ],
+      "timestamp": "2025-01-08T09:56:16-06:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/utils.js"
+      ],
+      "author": "GitHub",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "511d9dfca8f2329534ee9c75990163766b82c407",
+      "deleted_files": [],
+      "duplicate_group": "511d9dfca8f2329534ee9c75990163766b82c407",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/utils.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 4,
+      "message_word_count": 5,
+      "modified_files": [
+        "lib/utils.js"
+      ],
+      "parent": "7f13d572c13228856822af9ba4a7a094f4784ac9",
+      "query": "refactor: simplify `normalizeTypes` function (#6097)",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "lib/utils.js"
+      ],
+      "timestamp": "2025-02-04T11:59:48+01:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/response.js",
+        "test/res.links.js"
+      ],
+      "author": "GitHub",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "caa4f68ee8d32474676fa29cc2086dcc1d62208b",
+      "deleted_files": [],
+      "duplicate_group": "caa4f68ee8d32474676fa29cc2086dcc1d62208b",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/response.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "test/res.links.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 14,
+      "message_word_count": 16,
+      "modified_files": [
+        "lib/response.js",
+        "test/res.links.js"
+      ],
+      "parent": "6ed3439584b6bc77b0f1156f8797700df063fa63",
+      "query": "feat: Extend res.links() to allow adding multiple links with the same rel (closes #2729) (#4885)",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "lib/response.js",
+        "test/res.links.js"
+      ],
+      "timestamp": "2025-02-14T10:20:53-06:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "test/support/utils.js"
+      ],
+      "author": "GitHub",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "9f4dbe3a1332cd883069ba9b73a9eed99234cfc7",
+      "deleted_files": [],
+      "duplicate_group": "9f4dbe3a1332cd883069ba9b73a9eed99234cfc7",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "test/support/utils.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 6,
+      "message_word_count": 8,
+      "modified_files": [
+        "test/support/utils.js"
+      ],
+      "parent": "9784321e89b7d32aaff481aa24a9e8cccef4b101",
+      "query": "chore: wider range for query test skip (#6512)",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "test/support/utils.js"
+      ],
+      "timestamp": "2025-05-15T11:40:26-05:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "test/res.append.js"
+      ],
+      "author": "GitHub",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "b0ed15b4525cd68d4a94d1a71d1a34da6f2961d3",
+      "deleted_files": [],
+      "duplicate_group": "b0ed15b4525cd68d4a94d1a71d1a34da6f2961d3",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "test/res.append.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 3,
+      "message_word_count": 4,
+      "modified_files": [
+        "test/res.append.js"
+      ],
+      "parent": "3910323d09809f3b553af47ffd7b568d8dfd9fd6",
+      "query": "chore: fix typo (#6609)",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "test/res.append.js"
+      ],
+      "timestamp": "2025-07-04T09:47:31-05:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/request.js",
+        "test/req.protocol.js"
+      ],
+      "author": "GitHub",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "89f198c6a50ab0cb65b741767791dd1b647e3b2c",
+      "deleted_files": [],
+      "duplicate_group": "89f198c6a50ab0cb65b741767791dd1b647e3b2c",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/request.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "test/req.protocol.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 9,
+      "message_word_count": 9,
+      "modified_files": [
+        "lib/request.js",
+        "test/req.protocol.js"
+      ],
+      "parent": "d9a62f983390da932c4f2e21e67a55fa33c164f4",
+      "query": "lib: use req.socket over deprecated req.connection (#6705)",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "lib/request.js",
+        "test/req.protocol.js"
+      ],
+      "timestamp": "2025-08-21T10:05:29-05:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/application.js",
+        "test/app.render.js"
+      ],
+      "author": "GitHub",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "c9ecf7b658388ccaa2b8470aabad92aabde458a2",
+      "deleted_files": [],
+      "duplicate_group": "c9ecf7b658388ccaa2b8470aabad92aabde458a2",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/application.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "test/app.render.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 10,
+      "message_word_count": 15,
+      "modified_files": [
+        "lib/application.js",
+        "test/app.render.js"
+      ],
+      "parent": "a479419b16f5b97eb20f5dbae5848708ff30ce2d",
+      "query": "feat: Allow passing null or undefined as the value for options in app.render (#6903)",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "lib/application.js",
+        "test/app.render.js"
+      ],
+      "timestamp": "2026-01-31T21:51:17-05:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "test/utils.js"
+      ],
+      "author": "GitHub",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "6b7ccfcf120e77f20aa22ff96ccf98a994c7d35b",
+      "deleted_files": [],
+      "duplicate_group": "6b7ccfcf120e77f20aa22ff96ccf98a994c7d35b",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "test/utils.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 8,
+      "message_word_count": 11,
+      "modified_files": [
+        "test/utils.js"
+      ],
+      "parent": "c9ecf7b658388ccaa2b8470aabad92aabde458a2",
+      "query": "test: add test for normalizeType fallback when mime lookup fails (#6894)",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "test/utils.js"
+      ],
+      "timestamp": "2026-01-31T21:53:38-05:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "test/res.type.js"
+      ],
+      "author": "GitHub",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "b4ab7d65d7724d9309b6faaaf82ad492da2a6d35",
+      "deleted_files": [],
+      "duplicate_group": "b4ab7d65d7724d9309b6faaaf82ad492da2a6d35",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "test/res.type.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 6,
+      "message_word_count": 9,
+      "modified_files": [
+        "test/res.type.js"
+      ],
+      "parent": "c4cc78bdf55ae657536239aad2077425f7d79045",
+      "query": "test: include edge case tests for `res.type()` (#7037)",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "test/res.type.js"
+      ],
+      "timestamp": "2026-02-23T10:58:26+01:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "examples/auth/index.js",
+        "examples/ejs/index.js",
+        "examples/route-middleware/index.js"
+      ],
+      "author": "GitHub",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 3,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "6c4249feec8ab40631817c8e7001baf2ed022224",
+      "deleted_files": [],
+      "duplicate_group": "6c4249feec8ab40631817c8e7001baf2ed022224",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "examples/auth/index.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "examples/ejs/index.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "examples/route-middleware/index.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 8,
+      "message_word_count": 9,
+      "modified_files": [
+        "examples/auth/index.js",
+        "examples/ejs/index.js",
+        "examples/route-middleware/index.js"
+      ],
+      "parent": "06e2367f91490f241e8932b56ffda042ec0debb5",
+      "query": "docs: replace dummy with placeholder in example comments (#7064)",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 3,
+      "targets": [
+        "examples/auth/index.js",
+        "examples/ejs/index.js",
+        "examples/route-middleware/index.js"
+      ],
+      "timestamp": "2026-03-01T08:55:02-05:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/request.js"
+      ],
+      "author": "GitHub",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "9d8223d92ee81137a50a28eb6ad55a096791091d",
+      "deleted_files": [],
+      "duplicate_group": "9d8223d92ee81137a50a28eb6ad55a096791091d",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/request.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 6,
+      "message_word_count": 7,
+      "modified_files": [
+        "lib/request.js"
+      ],
+      "parent": "90ec6206d3275fdf2787f2028c6f48a2d92e8042",
+      "query": "fix: replace deprecated trimRight() with trimEnd() (#7265)",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "lib/request.js"
+      ],
+      "timestamp": "2026-06-15T21:34:06-05:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/response.js",
+        "test/res.send.js"
+      ],
+      "author": "GitHub",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "18e5985b8a9d5e8423db0a9121f22bdaecd5b120",
+      "deleted_files": [],
+      "duplicate_group": "18e5985b8a9d5e8423db0a9121f22bdaecd5b120",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/response.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "test/res.send.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 14,
+      "message_word_count": 15,
+      "modified_files": [
+        "lib/response.js",
+        "test/res.send.js"
+      ],
+      "parent": "59e205a57a04fced6bb7b8ec0b5dec29461a9996",
+      "query": "fix(res.send): add Content-Length header only if Transfer-Encoding is not present (#4893)",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "lib/response.js",
+        "test/res.send.js"
+      ],
+      "timestamp": "2026-06-15T22:06:31-05:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "lib/request.js",
+        "test/req.fresh.js"
+      ],
+      "author": "GitHub",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "ae6dd37680e3a00618d6c8a3e522f0ee4eeba1a4",
+      "deleted_files": [],
+      "duplicate_group": "ae6dd37680e3a00618d6c8a3e522f0ee4eeba1a4",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "lib/request.js",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "test/req.fresh.js",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Node.js / JavaScript",
+      "meaningful_word_count": 7,
+      "message_word_count": 8,
+      "modified_files": [
+        "lib/request.js",
+        "test/req.fresh.js"
+      ],
+      "parent": "ba006766fb964571723138708eacaba0f55759cd",
+      "query": "feat: allow conditional revalidation for QUERY requests (#7366)",
+      "renamed_files": [],
+      "repository": "Express",
+      "repository_url": "https://github.com/expressjs/express.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "lib/request.js",
+        "test/req.fresh.js"
+      ],
+      "timestamp": "2026-07-12T13:22:00-05:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/helpers.py",
+        "src/flask/scaffold.py"
+      ],
+      "author": "Adrian Moennich",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "10b0d6b33f7a4414fd3f4474c0deceed2e40117e",
+      "deleted_files": [],
+      "duplicate_group": "10b0d6b33f7a4414fd3f4474c0deceed2e40117e",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/helpers.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "src/flask/scaffold.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 7,
+      "message_word_count": 8,
+      "modified_files": [
+        "src/flask/helpers.py",
+        "src/flask/scaffold.py"
+      ],
+      "parent": "1a8549debb914eecc85cf63034093b55792c7e8f",
+      "query": "Move get_root_path back to flask.helpers",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "src/flask/helpers.py",
+        "src/flask/scaffold.py"
+      ],
+      "timestamp": "2021-04-27T16:42:16+02:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "docs/conf.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "52adf2ec219a0cb9abcfd116ec104c9a362c602a",
+      "deleted_files": [],
+      "duplicate_group": "52adf2ec219a0cb9abcfd116ec104c9a362c602a",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "docs/conf.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 4,
+      "message_word_count": 5,
+      "modified_files": [
+        "docs/conf.py"
+      ],
+      "parent": "6fb1101f7075b4ff8197f3ef3b9fecfa41dc34ee",
+      "query": "rename default branch in files",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "docs/conf.py"
+      ],
+      "timestamp": "2021-05-11T15:18:41-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/app.py",
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py"
+      ],
+      "author": "Phil Jones",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 3,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "10a36cb60e10594aa5dbf3c5aba6abbd5f6fcd70",
+      "deleted_files": [],
+      "duplicate_group": "10a36cb60e10594aa5dbf3c5aba6abbd5f6fcd70",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/app.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "src/flask/blueprints.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "src/flask/scaffold.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 5,
+      "message_word_count": 5,
+      "modified_files": [
+        "src/flask/app.py",
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py"
+      ],
+      "parent": "8796b2a784bc45fcc6865cd80b2cba0601448727",
+      "query": "Improve decorator factory type signatures",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 3,
+      "targets": [
+        "src/flask/app.py",
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py"
+      ],
+      "timestamp": "2021-05-21T08:09:05Z"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/app.py",
+        "src/flask/blueprints.py",
+        "src/flask/wrappers.py"
+      ],
+      "author": "pgjones",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 3,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "141fde1d8ec8663b4be98777750d2f58c6fe44ad",
+      "deleted_files": [],
+      "duplicate_group": "141fde1d8ec8663b4be98777750d2f58c6fe44ad",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/app.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "src/flask/blueprints.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "src/flask/wrappers.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 3,
+      "message_word_count": 3,
+      "modified_files": [
+        "src/flask/app.py",
+        "src/flask/blueprints.py",
+        "src/flask/wrappers.py"
+      ],
+      "parent": "99afbb277d25d3b052e00b9a8da216054d51d62a",
+      "query": "Bugfix blueprint naming",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 3,
+      "targets": [
+        "src/flask/app.py",
+        "src/flask/blueprints.py",
+        "src/flask/wrappers.py"
+      ],
+      "timestamp": "2021-05-21T15:04:18+01:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/typing.py"
+      ],
+      "author": "Phil Jones",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "f7adb2c813c5c10dcab5bc81ee173a6f9fbd406a",
+      "deleted_files": [],
+      "duplicate_group": "f7adb2c813c5c10dcab5bc81ee173a6f9fbd406a",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/typing.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 4,
+      "message_word_count": 5,
+      "modified_files": [
+        "src/flask/typing.py"
+      ],
+      "parent": "d81aa70106877b38673275e4539ab1f3232c4fea",
+      "query": "improve typing for `teardown_request`",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/typing.py"
+      ],
+      "timestamp": "2021-05-24T19:28:57Z"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "tests/test_async.py"
+      ],
+      "author": "Phil Jones",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "5205cd4ea979f6c322e4e6a256a72e7808592818",
+      "deleted_files": [],
+      "duplicate_group": "5205cd4ea979f6c322e4e6a256a72e7808592818",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "tests/test_async.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 8,
+      "message_word_count": 10,
+      "modified_files": [
+        "tests/test_async.py"
+      ],
+      "parent": "270eb2df2a1606383f50ff079a32240966b43fbc",
+      "query": "[pre-commit.ci] auto fixes from pre-commit.com hooks",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "tests/test_async.py"
+      ],
+      "timestamp": "2021-06-01T18:08:19Z"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/json/__init__.py",
+        "tests/test_json.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "892ae955093cc3b7925230ff7bc346a6afb14f5d",
+      "deleted_files": [],
+      "duplicate_group": "892ae955093cc3b7925230ff7bc346a6afb14f5d",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/json/__init__.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "tests/test_json.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 4,
+      "message_word_count": 5,
+      "modified_files": [
+        "src/flask/json/__init__.py",
+        "tests/test_json.py"
+      ],
+      "parent": "06cf349bb8b69d9946c3a6a64d32eb552cc7c28b",
+      "query": "jsonify encodes decimal to str",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "src/flask/json/__init__.py",
+        "tests/test_json.py"
+      ],
+      "timestamp": "2021-08-05T18:36:13-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/app.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "3f6cdbd8b35f2b887dddbdac5ef6461833b6dd3b",
+      "deleted_files": [],
+      "duplicate_group": "3f6cdbd8b35f2b887dddbdac5ef6461833b6dd3b",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/app.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 7,
+      "message_word_count": 8,
+      "modified_files": [
+        "src/flask/app.py"
+      ],
+      "parent": "166a2a6207027bff07fdfc5590ce04f9b37e9e8f",
+      "query": "use similar code for all callback-applying methods",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/app.py"
+      ],
+      "timestamp": "2021-10-03T20:36:21-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/app.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "1b552d0b0163e1c1ae3d4895438a9ce2b2bc098e",
+      "deleted_files": [],
+      "duplicate_group": "1b552d0b0163e1c1ae3d4895438a9ce2b2bc098e",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/app.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 3,
+      "message_word_count": 3,
+      "modified_files": [
+        "src/flask/app.py"
+      ],
+      "parent": "e609dddd604bd8c808145973d91dcb8bb56a9906",
+      "query": "remove ContextVar compat",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/app.py"
+      ],
+      "timestamp": "2021-11-11T16:12:08-08:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/helpers.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "f8cdc78ce10f32a46390799e7ac16d231fb35803",
+      "deleted_files": [],
+      "duplicate_group": "f8cdc78ce10f32a46390799e7ac16d231fb35803",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/helpers.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 4,
+      "message_word_count": 4,
+      "modified_files": [
+        "src/flask/helpers.py"
+      ],
+      "parent": "b7501776a12c15e64b6cdac1e3b903a00df7d285",
+      "query": "remove deprecated total_seconds",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/helpers.py"
+      ],
+      "timestamp": "2021-11-12T09:52:16-08:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/sessions.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "282d8621dd4bdc3ee74e0d67b180e03f5f23899f",
+      "deleted_files": [],
+      "duplicate_group": "282d8621dd4bdc3ee74e0d67b180e03f5f23899f",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/sessions.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 6,
+      "message_word_count": 7,
+      "modified_files": [
+        "src/flask/sessions.py"
+      ],
+      "parent": "c8bf420483469ad9aa11f617188637445daf80ea",
+      "query": "document session lifetime and possible concurrency issues",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/sessions.py"
+      ],
+      "timestamp": "2021-11-16T06:19:01-08:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/json/__init__.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "a841cfabb58d3c1ac1d11b09353f458e759a63c2",
+      "deleted_files": [],
+      "duplicate_group": "a841cfabb58d3c1ac1d11b09353f458e759a63c2",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/json/__init__.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 6,
+      "message_word_count": 7,
+      "modified_files": [
+        "src/flask/json/__init__.py"
+      ],
+      "parent": "c5ca175004f1a153aff914eb14404973be05fb9b",
+      "query": "Only use a custom JSONDecoder if needed",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/json/__init__.py"
+      ],
+      "timestamp": "2021-12-22T18:07:04-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "setup.py",
+        "src/flask/cli.py"
+      ],
+      "author": "K900",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "751d85f3de3f726446bb12e4ddfae885a6645ba1",
+      "deleted_files": [],
+      "duplicate_group": "751d85f3de3f726446bb12e4ddfae885a6645ba1",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "setup.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "src/flask/cli.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 7,
+      "message_word_count": 8,
+      "modified_files": [
+        "setup.py",
+        "src/flask/cli.py"
+      ],
+      "parent": "fdac8a5404e3e3a316568107a293f134707c75bb",
+      "query": "cli: use importlib.metadata instead of pkg_resources",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "setup.py",
+        "src/flask/cli.py"
+      ],
+      "timestamp": "2022-01-17T19:36:57+03:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/cli.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "beae1249f7e580779ae18d2d831f7ec51e5aff98",
+      "deleted_files": [],
+      "duplicate_group": "beae1249f7e580779ae18d2d831f7ec51e5aff98",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/cli.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 6,
+      "message_word_count": 7,
+      "modified_files": [
+        "src/flask/cli.py"
+      ],
+      "parent": "e06dad62f6b49dff935f241114b3590774e2786a",
+      "query": "add `exclude-patterns` option to `flask run`",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/cli.py"
+      ],
+      "timestamp": "2022-02-09T12:44:03-08:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/cli.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "aa13521d42bfdb66bb0d89005cbe54a84eaa4fda",
+      "deleted_files": [],
+      "duplicate_group": "aa13521d42bfdb66bb0d89005cbe54a84eaa4fda",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/cli.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 5,
+      "message_word_count": 5,
+      "modified_files": [
+        "src/flask/cli.py"
+      ],
+      "parent": "3897a518014931a82c77a353e1e9c2248529b856",
+      "query": "lazy loading preserves click context",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/cli.py"
+      ],
+      "timestamp": "2022-02-22T19:04:03-08:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/debughelpers.py",
+        "src/flask/wrappers.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "0a300d007d3a5ef902e0b3c91f6189267fbed182",
+      "deleted_files": [],
+      "duplicate_group": "0a300d007d3a5ef902e0b3c91f6189267fbed182",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/debughelpers.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "src/flask/wrappers.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 5,
+      "message_word_count": 6,
+      "modified_files": [
+        "src/flask/debughelpers.py",
+        "src/flask/wrappers.py"
+      ],
+      "parent": "c9a1f7ad6545c9cc27c41c385f1d4cd9c7cf1a98",
+      "query": "better replacement of original form KeyError",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "src/flask/debughelpers.py",
+        "src/flask/wrappers.py"
+      ],
+      "timestamp": "2022-03-23T08:26:22-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/config.py",
+        "tests/test_config.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "08a283af5efc999d4f1e29275317a5c0c05c6f7b",
+      "deleted_files": [],
+      "duplicate_group": "08a283af5efc999d4f1e29275317a5c0c05c6f7b",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/config.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "tests/test_config.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 6,
+      "message_word_count": 8,
+      "modified_files": [
+        "src/flask/config.py",
+        "tests/test_config.py"
+      ],
+      "parent": "425a62686f094de236a5a9eb1d6885de4730efa5",
+      "query": "Allow loading of environment variables into the config",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "src/flask/config.py",
+        "tests/test_config.py"
+      ],
+      "timestamp": "2022-03-25T11:54:03-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/config.py",
+        "tests/test_config.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "4eb5e9455b2a8f15f3dc5065a47f8e43ac47e539",
+      "deleted_files": [],
+      "duplicate_group": "4eb5e9455b2a8f15f3dc5065a47f8e43ac47e539",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/config.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "tests/test_config.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 4,
+      "message_word_count": 5,
+      "modified_files": [
+        "src/flask/config.py",
+        "tests/test_config.py"
+      ],
+      "parent": "08a283af5efc999d4f1e29275317a5c0c05c6f7b",
+      "query": "more from_prefixed_env features",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "src/flask/config.py",
+        "tests/test_config.py"
+      ],
+      "timestamp": "2022-03-25T11:54:45-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "setup.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "d023d943715f193e78413280e10d101f39501748",
+      "deleted_files": [],
+      "duplicate_group": "d023d943715f193e78413280e10d101f39501748",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "setup.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 4,
+      "message_word_count": 5,
+      "modified_files": [
+        "setup.py"
+      ],
+      "parent": "5589915b383a6f53e92f3822c982cce3c4083456",
+      "query": "set importlib_metadata minimum version",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "setup.py"
+      ],
+      "timestamp": "2022-03-30T14:10:12-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/json/__init__.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "eede1a3685e21deaeb6686e9de9b76a73b6a510c",
+      "deleted_files": [],
+      "duplicate_group": "eede1a3685e21deaeb6686e9de9b76a73b6a510c",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/json/__init__.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 3,
+      "message_word_count": 5,
+      "modified_files": [
+        "src/flask/json/__init__.py"
+      ],
+      "parent": "69f71b4d94006678a2463f76a4504208d195c367",
+      "query": "fix annotation for json.loads",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/json/__init__.py"
+      ],
+      "timestamp": "2022-04-24T09:53:10-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "tests/test_appctx.py",
+        "tests/test_basic.py",
+        "tests/test_cli.py",
+        "tests/test_config.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 4,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "ef6c2b9e4aee74098a1208b42ce432d7c82fc0d3",
+      "deleted_files": [],
+      "duplicate_group": "ef6c2b9e4aee74098a1208b42ce432d7c82fc0d3",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "tests/test_appctx.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "tests/test_basic.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "tests/test_cli.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "tests/test_config.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 3,
+      "message_word_count": 5,
+      "modified_files": [
+        "tests/test_appctx.py",
+        "tests/test_basic.py",
+        "tests/test_cli.py",
+        "tests/test_config.py"
+      ],
+      "parent": "ef7d01f0a03be512b22d2a28b5a4229fdc87ea9a",
+      "query": "clean up pytest.raises tests",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 4,
+      "targets": [
+        "tests/test_appctx.py",
+        "tests/test_basic.py",
+        "tests/test_cli.py",
+        "tests/test_config.py"
+      ],
+      "timestamp": "2022-04-28T09:32:31-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/__init__.py",
+        "src/flask/app.py",
+        "src/flask/helpers.py",
+        "tests/test_helpers.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 4,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "eb5dd9f5ef255c578cbbe13c1cb4dd11389d5519",
+      "deleted_files": [],
+      "duplicate_group": "eb5dd9f5ef255c578cbbe13c1cb4dd11389d5519",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/__init__.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "src/flask/app.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "src/flask/helpers.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "tests/test_helpers.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 4,
+      "message_word_count": 5,
+      "modified_files": [
+        "src/flask/__init__.py",
+        "src/flask/app.py",
+        "src/flask/helpers.py",
+        "tests/test_helpers.py"
+      ],
+      "parent": "a25d234cdddf584528dd6af21db736b6faad27af",
+      "query": "add aborter object to app",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 4,
+      "targets": [
+        "src/flask/__init__.py",
+        "src/flask/app.py",
+        "src/flask/helpers.py",
+        "tests/test_helpers.py"
+      ],
+      "timestamp": "2022-05-12T13:29:54-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "tests/test_basic.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "e044b00047da9bf94e7eb88049a17fe1dcf78f4e",
+      "deleted_files": [],
+      "duplicate_group": "e044b00047da9bf94e7eb88049a17fe1dcf78f4e",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "tests/test_basic.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 4,
+      "message_word_count": 6,
+      "modified_files": [
+        "tests/test_basic.py"
+      ],
+      "parent": "a406c297aafa28074d11ec6fd27c246c70418cb4",
+      "query": "avoid triggering setupmethod late in tests",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "tests/test_basic.py"
+      ],
+      "timestamp": "2022-05-23T09:09:12-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/cli.py",
+        "tests/test_cli.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "1232d698600e11dcb83bb5dc349ca785eae02d2f",
+      "deleted_files": [],
+      "duplicate_group": "1232d698600e11dcb83bb5dc349ca785eae02d2f",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/cli.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "tests/test_cli.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 5,
+      "message_word_count": 6,
+      "modified_files": [
+        "src/flask/cli.py",
+        "tests/test_cli.py"
+      ],
+      "parent": "e322f32e94ac97981cfc441cb1ae187580b41d37",
+      "query": "inline conditional imports for cli behaviors",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "src/flask/cli.py",
+        "tests/test_cli.py"
+      ],
+      "timestamp": "2022-05-23T09:46:20-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/typing.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "8cb950671f39c64707b6aaebfc60d7a8f1157da5",
+      "deleted_files": [],
+      "duplicate_group": "8cb950671f39c64707b6aaebfc60d7a8f1157da5",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/typing.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 8,
+      "message_word_count": 10,
+      "modified_files": [
+        "src/flask/typing.py"
+      ],
+      "parent": "a4f63e0390e4f9aba543514d16479ce6f40e46be",
+      "query": "use bound typevar to accept Flask and Werkzeug Response classes",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/typing.py"
+      ],
+      "timestamp": "2022-05-23T13:21:22-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/app.py",
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py",
+        "src/flask/typing.py",
+        "tests/typing/typing_route.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 5,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "81be290ec8889c157c84bc7ce857f883396c5daf",
+      "deleted_files": [],
+      "duplicate_group": "81be290ec8889c157c84bc7ce857f883396c5daf",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/app.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "src/flask/blueprints.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "src/flask/scaffold.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "src/flask/typing.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "tests/typing/typing_route.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 6,
+      "message_word_count": 6,
+      "modified_files": [
+        "src/flask/app.py",
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py",
+        "src/flask/typing.py",
+        "tests/typing/typing_route.py"
+      ],
+      "parent": "8c6f1d96ded2a22429b1ee7da6c3870cb140b587",
+      "query": "view function is actually type checked",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 5,
+      "targets": [
+        "src/flask/app.py",
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py",
+        "src/flask/typing.py",
+        "tests/typing/typing_route.py"
+      ],
+      "timestamp": "2022-06-05T15:43:53-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/scaffold.py",
+        "tests/test_instance_config.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "88bcf78439b66b5fcba9f4d3a1c56307f98dbf1d",
+      "deleted_files": [],
+      "duplicate_group": "88bcf78439b66b5fcba9f4d3a1c56307f98dbf1d",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/scaffold.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "tests/test_instance_config.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 8,
+      "message_word_count": 10,
+      "modified_files": [
+        "src/flask/scaffold.py",
+        "tests/test_instance_config.py"
+      ],
+      "parent": "fb89745408cc02515815c792355c7e883b2d08a4",
+      "query": "instance_path for namespace packages uses path closest to submodule",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "src/flask/scaffold.py",
+        "tests/test_instance_config.py"
+      ],
+      "timestamp": "2022-06-06T08:16:00-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/cli.py",
+        "tests/test_cli.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "aa801c431ad1f979bce3ea1afbd88e7796ebfd7e",
+      "deleted_files": [],
+      "duplicate_group": "aa801c431ad1f979bce3ea1afbd88e7796ebfd7e",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/cli.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "tests/test_cli.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 3,
+      "message_word_count": 4,
+      "modified_files": [
+        "src/flask/cli.py",
+        "tests/test_cli.py"
+      ],
+      "parent": "4f03a769d44f6740490dd4ddf70e094c12a6090c",
+      "query": "FlaskGroup can be nested",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "src/flask/cli.py",
+        "tests/test_cli.py"
+      ],
+      "timestamp": "2022-06-15T14:09:56-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "examples/tutorial/flaskr/db.py",
+        "src/flask/cli.py",
+        "tests/test_cli.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 3,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "c9e000b9cea2e117218d460874d86301fbb43c43",
+      "deleted_files": [],
+      "duplicate_group": "c9e000b9cea2e117218d460874d86301fbb43c43",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "examples/tutorial/flaskr/db.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "src/flask/cli.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "tests/test_cli.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 6,
+      "message_word_count": 10,
+      "modified_files": [
+        "examples/tutorial/flaskr/db.py",
+        "src/flask/cli.py",
+        "tests/test_cli.py"
+      ],
+      "parent": "ae547270e935b08d4deada9e28b049ff53debefe",
+      "query": "with_appcontext lasts for the lifetime of the click context",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 3,
+      "targets": [
+        "examples/tutorial/flaskr/db.py",
+        "src/flask/cli.py",
+        "tests/test_cli.py"
+      ],
+      "timestamp": "2022-06-17T11:52:01-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/json/__init__.py"
+      ],
+      "author": "Ties Jan Hefting",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "9dfcb90c92e13f2d92cb723cb834b5e0d666a2f5",
+      "deleted_files": [],
+      "duplicate_group": "9dfcb90c92e13f2d92cb723cb834b5e0d666a2f5",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/json/__init__.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 4,
+      "message_word_count": 6,
+      "modified_files": [
+        "src/flask/json/__init__.py"
+      ],
+      "parent": "e4c4fd57710097c7405f7b185b9048c1c8c72d3e",
+      "query": "Document serialization of Decimal in JSONEncoder",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/json/__init__.py"
+      ],
+      "timestamp": "2022-07-06T11:47:50+02:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/globals.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "0b2f809f9b56861dae3ae5154d73b4afaf632a0a",
+      "deleted_files": [],
+      "duplicate_group": "0b2f809f9b56861dae3ae5154d73b4afaf632a0a",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/globals.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 4,
+      "message_word_count": 5,
+      "modified_files": [
+        "src/flask/globals.py"
+      ],
+      "parent": "89463cb77c7f3830c308cdfcc250255fd7377d01",
+      "query": "access names as proxies directly",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/globals.py"
+      ],
+      "timestamp": "2022-07-08T11:13:09-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/templating.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "58f3536a8f5dfc18e559c518ae38cba52bec90a9",
+      "deleted_files": [],
+      "duplicate_group": "58f3536a8f5dfc18e559c518ae38cba52bec90a9",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/templating.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 6,
+      "message_word_count": 7,
+      "modified_files": [
+        "src/flask/templating.py"
+      ],
+      "parent": "7096b2c4b13660998ad9a7bc845c3e6c5779afaa",
+      "query": "error for render_template outside app context",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/templating.py"
+      ],
+      "timestamp": "2022-07-13T13:45:42-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/ctx.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "095651be9eec58ddb0c2eb6158318b1c703c67c5",
+      "deleted_files": [],
+      "duplicate_group": "095651be9eec58ddb0c2eb6158318b1c703c67c5",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/ctx.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 6,
+      "message_word_count": 8,
+      "modified_files": [
+        "src/flask/ctx.py"
+      ],
+      "parent": "02a08512527f997e43d1c01d03d4d473cab3b239",
+      "query": "fix has_app_context and has_request_context",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/ctx.py"
+      ],
+      "timestamp": "2022-07-25T07:35:17-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/cli.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "7d53a129cf1b28f1a88491ae50877473b68bdb54",
+      "deleted_files": [],
+      "duplicate_group": "7d53a129cf1b28f1a88491ae50877473b68bdb54",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/cli.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 3,
+      "message_word_count": 3,
+      "modified_files": [
+        "src/flask/cli.py"
+      ],
+      "parent": "633f421031c9c18b56177b0d42adcb505b4627b1",
+      "query": "remove __traceback_hide__",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/cli.py"
+      ],
+      "timestamp": "2022-08-01T10:52:12-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/cli.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "e3df23374cdb9342a823556170c53c9d987d0d33",
+      "deleted_files": [],
+      "duplicate_group": "e3df23374cdb9342a823556170c53c9d987d0d33",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/cli.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 4,
+      "message_word_count": 5,
+      "modified_files": [
+        "src/flask/cli.py"
+      ],
+      "parent": "a0458efef6c8a5669bb6e78044a290bf560f962b",
+      "query": "remove env from shell banner",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/cli.py"
+      ],
+      "timestamp": "2022-08-05T11:29:39-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/__init__.py",
+        "tests/test_basic.py",
+        "tests/test_json_tag.py",
+        "tests/test_templating.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 4,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "9c02f07f9bb4c88207c2a6860742c452c35d2948",
+      "deleted_files": [],
+      "duplicate_group": "9c02f07f9bb4c88207c2a6860742c452c35d2948",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/__init__.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "tests/test_basic.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "tests/test_json_tag.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "tests/test_templating.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 3,
+      "message_word_count": 3,
+      "modified_files": [
+        "src/flask/__init__.py",
+        "tests/test_basic.py",
+        "tests/test_json_tag.py",
+        "tests/test_templating.py"
+      ],
+      "parent": "1ee22e1736ffd12c2222cd6215ed04ec1592adaa",
+      "query": "deprecate markupsafe exports",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 4,
+      "targets": [
+        "src/flask/__init__.py",
+        "tests/test_basic.py",
+        "tests/test_json_tag.py",
+        "tests/test_templating.py"
+      ],
+      "timestamp": "2023-02-23T08:55:01-08:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/blueprints.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "fc03d0dfab64945169e1114cdc1fb39519a1e0c1",
+      "deleted_files": [],
+      "duplicate_group": "fc03d0dfab64945169e1114cdc1fb39519a1e0c1",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/blueprints.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 6,
+      "message_word_count": 7,
+      "modified_files": [
+        "src/flask/blueprints.py"
+      ],
+      "parent": "2a33c1785412075c09f9f55b3e25f2bc995ca461",
+      "query": "setup method on registered blueprint is error",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/blueprints.py"
+      ],
+      "timestamp": "2023-02-23T09:29:36-08:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/wrappers.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "b626a9387900a9f717eb42765275adc0bf0875e3",
+      "deleted_files": [],
+      "duplicate_group": "b626a9387900a9f717eb42765275adc0bf0875e3",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/wrappers.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 7,
+      "message_word_count": 9,
+      "modified_files": [
+        "src/flask/wrappers.py"
+      ],
+      "parent": "c9a5660cfd0be150b598325697f6f19019af0ef8",
+      "query": "Allow Response subclasses to set default_mimetype as None",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/wrappers.py"
+      ],
+      "timestamp": "2023-04-12T13:30:28-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/cli.py",
+        "tests/test_cli.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "84c007d34f7f0b8737310fe4d67be12c463e0130",
+      "deleted_files": [],
+      "duplicate_group": "84c007d34f7f0b8737310fe4d67be12c463e0130",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/cli.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "tests/test_cli.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 5,
+      "message_word_count": 7,
+      "modified_files": [
+        "src/flask/cli.py",
+        "tests/test_cli.py"
+      ],
+      "parent": "182ce3dd15dfa3537391c3efaf9c3ff407d134d4",
+      "query": "show subdomain or host in routes output",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "src/flask/cli.py",
+        "tests/test_cli.py"
+      ],
+      "timestamp": "2023-04-14T09:43:00-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/typing.py"
+      ],
+      "author": "pgjones",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "cc80a47f5be6c60e53c42ef9378e6db3b0e183b1",
+      "deleted_files": [],
+      "duplicate_group": "cc80a47f5be6c60e53c42ef9378e6db3b0e183b1",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/typing.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 3,
+      "message_word_count": 4,
+      "modified_files": [
+        "src/flask/typing.py"
+      ],
+      "parent": "3f6b243cec6859185ea4064e84b33c07cc7febf6",
+      "query": "Widen the response typing",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/typing.py"
+      ],
+      "timestamp": "2023-08-19T18:35:15+01:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/sessions.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "db461112c70d5f2bf93c7a6ac27eeb665c232dd0",
+      "deleted_files": [],
+      "duplicate_group": "db461112c70d5f2bf93c7a6ac27eeb665c232dd0",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/sessions.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 3,
+      "message_word_count": 3,
+      "modified_files": [
+        "src/flask/sessions.py"
+      ],
+      "parent": "7320e311a0a3f190351173f8be90cab31dadbf73",
+      "query": "access sha1 lazily",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/sessions.py"
+      ],
+      "timestamp": "2024-04-07T11:41:13-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/wrappers.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "a363642a32880114c7944b1017f2f69bd4cc00eb",
+      "deleted_files": [],
+      "duplicate_group": "a363642a32880114c7944b1017f2f69bd4cc00eb",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/wrappers.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 7,
+      "message_word_count": 8,
+      "modified_files": [
+        "src/flask/wrappers.py"
+      ],
+      "parent": "f958b6500b2aeb8edc578a07f00546becdad4c80",
+      "query": "fix mypy finding with new werkzeug endpoint type",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/wrappers.py"
+      ],
+      "timestamp": "2024-05-06T10:09:58-07:00"
+    },
+    {
+      "added_files": [
+        "tests/test_request.py"
+      ],
+      "all_changed_files": [
+        "src/flask/app.py",
+        "src/flask/wrappers.py",
+        "tests/test_basic.py",
+        "tests/test_request.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 4,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "c7a53888a1a514619b0611fd8b7928592f4ed612",
+      "deleted_files": [],
+      "duplicate_group": "c7a53888a1a514619b0611fd8b7928592f4ed612",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/app.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "src/flask/wrappers.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "tests/test_basic.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "tests/test_request.py",
+          "status": "A"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 4,
+      "message_word_count": 6,
+      "modified_files": [
+        "src/flask/app.py",
+        "src/flask/wrappers.py",
+        "tests/test_basic.py"
+      ],
+      "parent": "62c56e08c43f5eb174d15dd050591cfba9aed548",
+      "query": "add config and docs for limits",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 3,
+      "targets": [
+        "src/flask/app.py",
+        "src/flask/wrappers.py",
+        "tests/test_basic.py"
+      ],
+      "timestamp": "2024-11-01T13:17:53-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/testing.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "54c3f87af9f6c0d6622cec2c3d9695b0229fb8fa",
+      "deleted_files": [],
+      "duplicate_group": "54c3f87af9f6c0d6622cec2c3d9695b0229fb8fa",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/testing.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 5,
+      "message_word_count": 7,
+      "modified_files": [
+        "src/flask/testing.py"
+      ],
+      "parent": "ea08f155d8d37d515559534bbe0f80ef5185466c",
+      "query": "fix type hint for `cli_runner.invoke`",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/testing.py"
+      ],
+      "timestamp": "2024-11-23T17:50:40-08:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/__init__.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "7d5d1874581209f66ad7bcdfb7f85b2b9a7ca471",
+      "deleted_files": [],
+      "duplicate_group": "7d5d1874581209f66ad7bcdfb7f85b2b9a7ca471",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/__init__.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 5,
+      "message_word_count": 5,
+      "modified_files": [
+        "src/flask/__init__.py"
+      ],
+      "parent": "c7c8dc38ea2890d62b7aaff7e4c016e4b98101b0",
+      "query": "better type checking during deprecation",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/__init__.py"
+      ],
+      "timestamp": "2025-03-29T15:23:34-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/typing.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "410e5ab7ed0ef326fa8b5164a633863f137ffff5",
+      "deleted_files": [],
+      "duplicate_group": "410e5ab7ed0ef326fa8b5164a633863f137ffff5",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/typing.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 3,
+      "message_word_count": 4,
+      "modified_files": [
+        "src/flask/typing.py"
+      ],
+      "parent": "bfffe87d4c2ea255b9a51432bebb3d28741245c4",
+      "query": "Accept `AsyncIterable` for responses",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/typing.py"
+      ],
+      "timestamp": "2025-03-30T13:14:25-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/cli.py",
+        "src/flask/json/provider.py",
+        "src/flask/sansio/app.py",
+        "src/flask/typing.py",
+        "tests/test_cli.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 5,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "52df9eed45d0b19c588662ed8492d8fbaa0e7098",
+      "deleted_files": [],
+      "duplicate_group": "52df9eed45d0b19c588662ed8492d8fbaa0e7098",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/cli.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "src/flask/json/provider.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "src/flask/sansio/app.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "src/flask/typing.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "tests/test_cli.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 5,
+      "message_word_count": 6,
+      "modified_files": [
+        "src/flask/cli.py",
+        "src/flask/json/provider.py",
+        "src/flask/sansio/app.py",
+        "src/flask/typing.py",
+        "tests/test_cli.py"
+      ],
+      "parent": "e7e53807766ef1470bce546716a675ded4b08597",
+      "query": "drop end of life python versions",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 5,
+      "targets": [
+        "src/flask/cli.py",
+        "src/flask/json/provider.py",
+        "src/flask/sansio/app.py",
+        "src/flask/typing.py",
+        "tests/test_cli.py"
+      ],
+      "timestamp": "2025-05-13T08:31:54-07:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/sansio/app.py"
+      ],
+      "author": "subhajitsaha01",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "dbd4c2882593f6118103120aa96fa9acdf7deedb",
+      "deleted_files": [],
+      "duplicate_group": "dbd4c2882593f6118103120aa96fa9acdf7deedb",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/sansio/app.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 13,
+      "message_word_count": 16,
+      "modified_files": [
+        "src/flask/sansio/app.py"
+      ],
+      "parent": "85793d6c223dd845e8f218403a5ced83041d37e1",
+      "query": "Changed the static annotated type of select_jinja_autoescape method in src/flask/sansio/app.py",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/sansio/app.py"
+      ],
+      "timestamp": "2025-09-06T22:01:22+05:30"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/app.py",
+        "src/flask/sansio/app.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 2,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "c77a5203438fe772d41f6a47303ad3f57a4efe6d",
+      "deleted_files": [],
+      "duplicate_group": "c77a5203438fe772d41f6a47303ad3f57a4efe6d",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/app.py",
+          "status": "M"
+        },
+        {
+          "old_path": "",
+          "path": "src/flask/sansio/app.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 4,
+      "message_word_count": 4,
+      "modified_files": [
+        "src/flask/app.py",
+        "src/flask/sansio/app.py"
+      ],
+      "parent": "9b74a90dd3c47f792734823e8793ac36f38bc4dd",
+      "query": "deprecate should_ignore_error",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 2,
+      "targets": [
+        "src/flask/app.py",
+        "src/flask/sansio/app.py"
+      ],
+      "timestamp": "2026-01-24T19:50:30-08:00"
+    },
+    {
+      "added_files": [],
+      "all_changed_files": [
+        "src/flask/sansio/app.py"
+      ],
+      "author": "David Lord",
+      "benchmark_included": true,
+      "category": "clean",
+      "changed_file_count": 1,
+      "clean_reason": "meaningful query with 1-5 parent-state source targets",
+      "commit": "9368fb3f3c52d74534d14c1bef03c79c103356cd",
+      "deleted_files": [],
+      "duplicate_group": "9368fb3f3c52d74534d14c1bef03c79c103356cd",
+      "duplicate_of": null,
+      "duplicate_reason": "representative",
+      "evaluation_type": "retrieval",
+      "file_statuses": [
+        {
+          "old_path": "",
+          "path": "src/flask/sansio/app.py",
+          "status": "M"
+        }
+      ],
+      "language_or_stack": "Python",
+      "meaningful_word_count": 3,
+      "message_word_count": 3,
+      "modified_files": [
+        "src/flask/sansio/app.py"
+      ],
+      "parent": "06ea505ce2b2042af26e96d35ebf159af7c0869d",
+      "query": "case-insensitive comparison",
+      "renamed_files": [],
+      "repository": "Flask",
+      "repository_url": "https://github.com/pallets/flask.git",
+      "split": "test",
+      "target_count": 1,
+      "targets": [
+        "src/flask/sansio/app.py"
+      ],
+      "timestamp": "2026-05-01T20:56:39-07:00"
+    }
+  ]
+}

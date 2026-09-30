@@ -1,60 +1,73 @@
-# Smart Context
+# Smart Context v1.0.0
 
-Smart Context indexes a codebase and retrieves a small set of relevant source chunks for a coding task. It combines semantic search with dependency, filename, Git recency, and working-tree signals to help focus repository exploration.
+Smart Context is a codebase retrieval and context optimization tool for AI coding agents. It combines BGE-M3 semantic retrieval with a validated lightweight reranking layer and context-budget management.
 
-## Requirements
+## Why
 
-- Python 3.10 or newer
-- A SiliconFlow API key for BGE-M3 embeddings
-- Optional: a Zhipu API key when semantic chunk refinement is enabled
+Large repositories contain far more code than an LLM context window should receive. Smart Context retrieves a compact, relevant subset before the coding agent starts work.
 
-Install the Python dependencies from this directory:
+## Architecture
+
+Developer query → BGE-M3 query embedding → semantic candidate retrieval → optional V2.1 reranking → file-level deduplication → context construction → token budget → coding agent
+
+## Retrieval modes
+
+- **hybrid (default):** semantic retrieval plus the frozen V2.1 modifiers (tiny/no-symbol handling, filename/path role, and source/implementation role).
+- **semantic:** semantic similarity only; this is the stable baseline.
+
+Dependency, Git Recency, and Name/Path ranking weights are not part of either production mode. Experimental benchmark profiles remain available in the benchmark runner.
+
+## Key features
+
+- BGE-M3 semantic code retrieval and deterministic local chunking.
+- Adaptive semantic chunking infrastructure with optional GLM-assisted boundary proposals and local fallback.
+- SHA-256 content-addressed chunk identity and incremental/shared embedding reuse.
+- Historical parent-state evaluation, ranking ablations, repository-level benchmark parallelism, and token-budget-aware context construction.
+
+## Installation
+
+Requires Python 3.10+ and the dependencies in `requirements.txt`. Retrieval and indexing use `SILICONFLOW_API_KEY`; GLM boundary proposals optionally use `ZHIPU_API_KEY`. Put keys in a private local `.env` copied from `.env.example`.
 
 ```powershell
 python -m pip install -r requirements.txt
-```
-
-Copy `.env.example` to `.env` in this skill directory, then replace the placeholders with your API keys:
-
-```powershell
 Copy-Item .env.example .env
 ```
 
-The scripts load these supported keys automatically. Values already set in the current process take precedence. Keep `.env` private; it is ignored by Git, while `.env.example` contains placeholders only.
+## Usage
 
-## Index a repository
-
-Run the index updater from the repository you want to work on. The generated index is local to that repository and should not be committed.
+From the Smart Context directory, index a target repository and retrieve context:
 
 ```powershell
-python C:\path\to\smart-context\scripts\update_index.py
+python scripts\update_index.py --root C:\path\to\repository
+python scripts\retrieve.py --root C:\path\to\repository --query "Find the request authentication flow"
+python scripts\retrieve.py --root C:\path\to\repository --query "Find the request authentication flow" --mode hybrid
+python scripts\retrieve.py --root C:\path\to\repository --query "Find the request authentication flow" --mode semantic
 ```
 
-For optional GLM semantic chunk refinement, set `ZHIPU_API_KEY` before indexing. If refinement is unavailable or returns an invalid plan, indexing falls back to local chunking. Set `semantic_chunking.enabled` to `false` in `config/config.json` to use local chunk boundaries only.
+Use `--top-k N`, `--max-tokens N`, and `--json` to control or inspect the result. The default context budget is 6,000 tokens.
 
-## Retrieve context
+## Benchmark
 
-Run retrieval from the target repository, or pass the repository path with `--root`:
+Validation used 352 examples from CourseCompass (3), Express (169), and Flask (180). The frozen Semantic + V2.1 profile achieved micro MRR 0.472 versus 0.395 for Semantic Only.
 
-```powershell
-python C:\path\to\smart-context\scripts\retrieve.py --query "Find the course retrieval implementation"
-```
+The final held-out sanity test used 100 untouched examples (50 Express, 50 Flask). Semantic Only scored MRR 0.335; Semantic + V2.1 scored 0.447, a +0.1117 paired delta (95% bootstrap CI [+0.0631, +0.1630]). Hit@1/3/5 changed 0.220→0.350, 0.430→0.550, and 0.510→0.570; Recall@5 changed 0.409→0.489. Average context tokens increased from 1,769 to 2,516: V2.1 improved ranking quality but used more context.
 
-Useful options:
+See [benchmarks/BENCHMARK.md](benchmarks/BENCHMARK.md) for methods and full results.
 
-- `--top-k N` limits the number of returned chunks.
-- `--max-tokens N` sets the context budget.
-- `--json` emits machine-readable output, including ranking scores and reranking adjustments.
-- `--root PATH` selects the repository to search.
+## Limitations
 
-The default context budget is 6,000 tokens. Retrieval adjusts ranking conservatively for very small chunks, generic filename/path term overlap, and documentation or package files when a query clearly asks for implementation. Semantic similarity remains the main signal, and exact meaningful short-name matches are protected from the tiny-chunk penalty.
+- Git-touched files are weak supervision and may not represent every file needed for a task.
+- The final benchmark uses three repositories; the CourseCompass validation sample is very small.
+- The held-out sanity test uses 100 examples rather than the full remaining test set.
+- Results are not universal performance claims across languages or repositories.
+- Adaptive routing and learned reranking are future work.
 
-Inspect retrieved chunks before editing source files. The index is a navigation aid and does not replace checking the current source.
+## Future work
+
+Adaptive/query-aware routing, learned reranking, larger multi-repository evaluation, more languages, incremental historical index assembly, and optional local embedding inference.
 
 ## Tests
 
-Run the smart-context unit suite from this directory:
-
 ```powershell
-python -m unittest discover -v -s tests
+python -B -m unittest discover -v -s tests
 ```

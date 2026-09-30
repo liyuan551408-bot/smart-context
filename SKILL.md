@@ -1,6 +1,8 @@
 ---
 name: smart-context
 description: Reduce context use on medium or large codebases by incrementally indexing source files and retrieving a small, semantically ranked set of code chunks before coding. Use when a coding task depends on existing repository code.
+metadata:
+  version: "1.0.0"
 ---
 
 # Smart Context
@@ -8,13 +10,12 @@ description: Reduce context use on medium or large codebases by incrementally in
 Use this skill before exploring a medium or large repository when a coding task depends on existing project code.
 
 1. Run `python <skill>/scripts/update_index.py` from the target repository. On a first run it builds the index. The index is local under that repository's `cache/` directory and must not be committed.
-2. Run `python <skill>/scripts/retrieve.py --query "<the user's current task>"` (optionally `--top-k N`, `--max-tokens N`, or `--json`).
-3. Inspect the returned chunks before searching elsewhere. The tool performs query embedding, cosine search, reranking, limited direct dependency expansion, Git recency adjustment, and token-budget filtering.
+2. Run `python <skill>/scripts/retrieve.py --query "<the user's current task>"` (optionally `--mode semantic`, `--top-k N`, `--max-tokens N`, or `--json`). The default `hybrid` mode is semantic retrieval with the frozen V2.1 reranking modifiers; `semantic` is the pure semantic baseline.
+3. Inspect the returned chunks before searching elsewhere. The tool performs query embedding, cosine search, optional V2.1 reranking, file-level deduplication, and token-budget filtering.
 4. Follow imports or dependencies only when needed. If retrieval is insufficient, expand progressively:
-   - Stage 1: top semantic results.
-   - Stage 2: direct dependencies and exact symbol matches.
-   - Stage 3: targeted grep/search for the missing symbol or behavior.
-   - Stage 4: broader repository inspection only if prior stages fail.
+   - Stage 1: top ranked results.
+   - Stage 2: targeted grep/search for a missing symbol or behavior.
+   - Stage 3: broader repository inspection only if prior stages fail.
 5. Respect the configured context budget. Do not include unrelated code just to fill it.
 
 ## Adaptive chunking (V2)
