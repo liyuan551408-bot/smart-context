@@ -52,6 +52,21 @@ Validation used 352 examples from CourseCompass (3), Express (169), and Flask (1
 
 The final held-out sanity test used 100 untouched examples (50 Express, 50 Flask). Semantic Only scored MRR 0.335; Semantic + V2.1 scored 0.447, a +0.1117 paired delta (95% bootstrap CI [+0.0631, +0.1630]). Hit@1/3/5 changed 0.220→0.350, 0.430→0.550, and 0.510→0.570; Recall@5 changed 0.409→0.489. Average context tokens increased from 1,769 to 2,516: V2.1 improved ranking quality but used more context.
 
+### Fixed context-budget evaluation
+
+The same 100 held-out examples were evaluated at six maximum context budgets. Under every shared cap, Hybrid achieved higher MRR than Semantic Only. At the 2,000-token cap, MRR improved from 0.338 to 0.448, Hit@5 from 0.510 to 0.570, and Recall@5 from 0.404 to 0.484. MRR per 1,000 actual context tokens rose from 0.319 to 0.335.
+
+| Maximum budget | Semantic MRR / avg tokens | Hybrid MRR / avg tokens | Semantic MRR per 1k tokens | Hybrid MRR per 1k tokens |
+|---:|---:|---:|---:|---:|
+| 1,000 | 0.321 / 642 | 0.423 / 784 | 0.501 | 0.539 |
+| 1,500 | 0.336 / 858 | 0.441 / 1,083 | 0.392 | 0.407 |
+| 2,000 | 0.338 / 1,060 | 0.448 / 1,337 | 0.319 | 0.335 |
+| 3,000 | 0.333 / 1,364 | 0.446 / 1,763 | 0.244 | 0.253 |
+| 4,000 | 0.337 / 1,585 | 0.447 / 2,118 | 0.212 | 0.211 |
+| 6,000 | 0.335 / 1,769 | 0.447 / 2,516 | 0.189 | 0.178 |
+
+These are equal **maximum** budgets, not equal realized token counts: Hybrid used more context on average at every cap. Its MRR-per-token ratio was higher through the 3,000-token cap, approximately tied at 4,000, and lower at 6,000. In particular, the 2,000-token cap improved retrieval quality with about 277 additional average context tokens (1,337 versus 1,060); it does not demonstrate a reduction in reading tokens. Full metrics and paired budget deltas are in the [aggregate results](benchmarks/generated_multi_repo/fixed_context_budget_results.json), [per-query results](benchmarks/generated_multi_repo/fixed_context_budget_per_query.json), and [paired deltas](benchmarks/generated_multi_repo/fixed_context_budget_paired_deltas.json).
+
 See [benchmarks/BENCHMARK.md](benchmarks/BENCHMARK.md) for methods and full results.
 
 ## Limitations

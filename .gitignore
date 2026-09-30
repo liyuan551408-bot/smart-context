@@ -20,6 +20,9 @@ benchmarks/generated_multi_repo/*
 !benchmarks/generated_multi_repo/ranking_ablation_validation_3repo_per_query.json
 !benchmarks/generated_multi_repo/final_heldout_compact_manifest.json
 !benchmarks/generated_multi_repo/final_heldout_compact_results.json
+!benchmarks/generated_multi_repo/fixed_context_budget_results.json
+!benchmarks/generated_multi_repo/fixed_context_budget_per_query.json
+!benchmarks/generated_multi_repo/fixed_context_budget_paired_deltas.json
 
 # Local worktrees and generated embedding arrays.
 *.npy
