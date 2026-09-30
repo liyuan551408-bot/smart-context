@@ -14,11 +14,14 @@ Install the Python dependencies from this directory:
 python -m pip install -r requirements.txt
 ```
 
-Set the embedding key in the current PowerShell session. Keep credentials out of repository files and command output.
+Create a local `.env` file in this skill directory with the API keys you use:
 
-```powershell
-$env:SILICONFLOW_API_KEY = "YOUR_KEY"
+```env
+SILICONFLOW_API_KEY=your-siliconflow-key
+ZHIPU_API_KEY=your-zhipu-key
 ```
+
+The scripts load these supported keys automatically. Values already set in the current process take precedence. Keep `.env` private; it is ignored by Git.
 
 ## Index a repository
 

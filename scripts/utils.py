@@ -14,6 +14,31 @@ import requests
 
 SKILL_DIR = Path(__file__).resolve().parents[1]
 CONFIG = json.loads((SKILL_DIR / "config" / "config.json").read_text(encoding="utf-8"))
+API_ENV_KEYS = {"SILICONFLOW_API_KEY", "ZHIPU_API_KEY"}
+
+
+def load_env_file(path, environ=None):
+    """Load supported API keys from a local dotenv-style file without overriding the process."""
+    target = os.environ if environ is None else environ
+    try:
+        lines = Path(path).read_text(encoding="utf-8-sig").splitlines()
+    except OSError:
+        return
+    for line in lines:
+        entry = line.strip()
+        if not entry or entry.startswith("#") or "=" not in entry:
+            continue
+        key, value = entry.split("=", 1)
+        key = key.strip()
+        if key not in API_ENV_KEYS or key in target:
+            continue
+        value = value.strip()
+        if len(value) >= 2 and value[0] == value[-1] and value[0] in {"'", '"'}:
+            value = value[1:-1]
+        target[key] = value
+
+
+load_env_file(SKILL_DIR / ".env")
 
 
 def repo_root(start=None):
