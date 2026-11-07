@@ -2,6 +2,11 @@
 
 Smart Context is a codebase retrieval and context optimization tool for AI coding agents. It combines BGE-M3 semantic retrieval with a validated lightweight reranking layer and context-budget management.
 
+## In one example
+
+For a task such as "find the request authentication flow," Smart Context indexes a repository, ranks relevant code chunks, and returns a smaller set that fits a chosen token budget. `semantic` is the embedding-only baseline; `hybrid` adds small, deterministic ranking adjustments. The tool retrieves context for a coding agent; it does not edit the target repository.
+
+
 ## Why
 
 Large repositories contain far more code than an LLM context window should receive. Smart Context retrieves a compact, relevant subset before the coding agent starts work.
@@ -69,7 +74,7 @@ Within Hybrid, reducing the cap from 6,000 to 2,000 lowered average actual conte
 
 The table also compares the two modes at equal **maximum** budgets, not equal realized token counts: Hybrid used more context on average than Semantic Only at every cap. Its MRR-per-token ratio was higher through the 3,000-token cap, approximately tied at 4,000, and lower at 6,000. At the 2,000-token cap, Hybrid's MRR was 0.448 versus 0.338 for Semantic Only, while average actual context was 1,337 versus 1,060 tokens. Full metrics and paired budget deltas are in the [aggregate results](benchmarks/generated_multi_repo/fixed_context_budget_results.json), [per-query results](benchmarks/generated_multi_repo/fixed_context_budget_per_query.json), and [paired deltas](benchmarks/generated_multi_repo/fixed_context_budget_paired_deltas.json).
 
-See [benchmarks/BENCHMARK.md](benchmarks/BENCHMARK.md) for methods and full results.
+See [benchmarks/BENCHMARK.md](benchmarks/BENCHMARK.md) for methods and full results. The figures above are reported benchmark results, not a guarantee for a new repository.
 
 ## Limitations
 
